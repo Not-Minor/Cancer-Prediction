@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <title>PredCancer · Home</title>
+
+  <link rel="stylesheet" href="/static/css/bootstrap.css">
+
+  <link rel="stylesheet" href="/static/css/maicons.css">
+
+  <link rel="stylesheet" href="/static/vendor/animate/animate.css">
+
+  <link rel="stylesheet" href="/static/vendor/owl-carousel/css/owl.carousel.css">
+
+  <link rel="stylesheet" href="/static/vendor/fancybox/css/jquery.fancybox.css">
+
+  <link rel="stylesheet" href="/static/css/theme.css">
+
+</head>
+
+<body>
+
+  <!-- Back to top button -->
+  <div class="back-to-top"></div>
+
+  <header>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-diamond-fill"
+          viewBox="0 0 16 16">
+          <path
+            d="M9.05.435c-.58-.58-1.52-.58-2.1 0L4.047 3.339 8 7.293l3.954-3.954L9.049.435zm3.61 3.611L8.708 8l3.954 3.954 2.904-2.905c.58-.58.58-1.519 0-2.098l-2.904-2.905zm-.706 8.614L8 8.708l-3.954 3.954 2.905 2.904c.58.58 1.519.58 2.098 0l2.905-2.904zm-8.614-.706L7.292 8 3.339 4.046.435 6.951c-.58.58-.58 1.519 0 2.098l2.904 2.905z" />
+        </svg>
+        <a href="/" class="navbar-brand">Pred<span class="text-primary">Cancer</span></a>
+
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarContent">
+          <ul class="navbar-nav ml-auto pt-3 pt-lg-0">
+            <li class="nav-item active">
+              <a href="/" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="/about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="/services" class="nav-link">Services</a>
+            </li>
+            <li class="nav-item">
+              <a href="/contact" class="nav-link">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div> <!-- .container -->
+    </nav> <!-- .navbar -->
+
+    <div class="page-banner home-banner mb-5">
+      <div class="slider-wrapper">
+        <div class="owl-carousel hero-carousel">
+          <div class="hero-carousel-item">
+            <img src="/static/img/bg_image_1.jpg" alt="">
+            <div class="img-caption">
+              <div class="subhead">We predict various types of</div>
+              <h1 class="mb-4">Cancers</h1>
+              <a href="/services" class="btn btn-outline-light">Get Started</a>
+            </div>
+          </div>
+
+          <div class="hero-carousel-item">
+            <img src="/static/img/bg_image_2.jpg" alt="">
+            <div class="img-caption">
+              <div class="subhead">Easy way to know </div>
+              <h1 class="mb-4">About your cancer </h1>
+              <a href="/about" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div> <!-- .slider-wrapper -->
+    </div> <!-- .page-banner -->
+  </header>
+
+  <main>
+
+    <div class="page-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 py-3">
+            <div class="subhead">Breast Cancer</div>
+            <h2 class="title-section">To predict <span class="fg-primary">Breast Cancer</span> </h2>
+
+            <p>Breast cancer is a disease in which cells in the breast grow out of control. There are different kinds of
+              breast cancer. The kind of breast cancer depends on which cells in the breast turn into cancer.</p>
+
+            <form action="/breast" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+              <span>
+                Upload Image <input type="file" name="image">
+              </span>
+              <input type="submit" value="Predict" class="btn btn-primary">
+
+            </form>
+          </div>
+          <div class="col-lg-6 py-3">
+            <div class="about-img">
+              <img src="/static/img/breast.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .page-section -->
+
+    <div class="page-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 py-3">
+            <div class="about-img">
+              <img src="/static/img/skin.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 py-3">
+            <div class="subhead">Skin Cancer</div>
+            <h2 class="title-section">To predict <span class="fg-primary">Skin Cancer</span> </h2>
+
+            <p>Skin cancer is an abnormal growth of skin cells. It generally develops in areas that are exposed to the
+              sun, but it can also form in places that don’t normally get sun exposure..</p>
+
+            <form action="/skin" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+              <span>
+                Upload Image <input type="file" name="image">
+              </span>
+              <input type="submit" value="Predict" class="btn btn-primary">
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .page-section -->
+
+
+    <div class="page-section">
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-lg-6 py-3">
+            <div class="subhead">Lungs Cancer</div>
+            <h2 class="title-section">To predict <span class="fg-primary">Lungs Cancer</span> </h2>
+
+            <p>Lung cancer begins in the lungs and may spread to lymph nodes or other organs in the body, such as the
+              brain. Cancer from other organs also may spread to the lungs. When cancer cells spread from one organ to
+              another, they are called metastases.</p>
+            <form action="/lungs" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+              <span>
+                Upload Image <input type="file" name="image">
+              </span>
+              <input type="submit" value="Predict" class="btn btn-primary">
+            </form>
+          </div>
+          <div class="col-lg-6 py-3">
+            <div class="about-img">
+              <img src="/static/img/lungs.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .page-section -->
+
+
+    <div class="page-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 py-3">
+            <div class="about-img">
+              <img src="/static/img/brain.png" alt="">
+            </div>
+          </div>
+          <div class="col-lg-6 py-3">
+            <div class="subhead">Brain Cancer</div>
+            <h2 class="title-section">To predict <span class="fg-primary">Brain Cancer</span> </h2>
+
+            <p>Brain cancer can arise from many different types of brain cells (primary brain cancer) or occur when
+              cancer cells from other parts of the body spread (metastasize) to the brain. True brain cancers are
+              those
+              that arise in the brain itself.</p>
+
+            <form action="/brain" method="post" enctype="multipart/form-data" onsubmit="showloading()">
+              <span>
+                Upload Image <input type="file" name="image">
+              </span>
+              <input type="submit" value="Predict" class="btn btn-primary">
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div> <!-- .page-section -->
+
+
+      <div class="page-section">
+        <div class="container">
+          <div class="text-center">
+            <div class="subhead">Our Teams</div>
+            <h2 class="title-section">The Backend Team of Pred<span class="fg-primary">Cancer</span></h2>
+            <br>
+            <br>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-3">
+
+              <div class="team-wrap">
+                <div class="team-profile">
+                  <img src="/static/img/teams/unnamed.jpg" alt="">
+                </div>
+                <div class="team-content">
+                  <h5>Apratim Sandhu</h5>
+                  <div class="text-sm fg-grey">Breast Cancer </div>
+
+                  <div class="social-button">
+                    <a href="https://www.linkedin.com/in/apratim-sadhu-01"><span class="mai-logo-linkedin"></span></a>
+                    <a href="mailto:apratimsadhu01@gmail.com"><span class="mai-mail"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+
+              <div class="team-wrap">
+                <div class="team-profile">
+                  <img src="/static/img/teams/unnamed.jpg" alt="">
+                </div>
+                <div class="team-content">
+                  <h5>Abhishek Mehra</h5>
+                  <div class="text-sm fg-grey">Skin Cancer </div>
+
+                  <div class="social-button">
+                    <a href="https://www.linkedin.com/in/abhishek-mehra-4366091a9/"><span
+                        class="mai-logo-linkedin"></span></a>
+                    <a href="mailto:mehraabhishek466@gmail.com"><span class="mai-mail"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+
+              <div class="team-wrap">
+                <div class="team-profile">
+                  <img src="/static/img/teams/unnamed.jpg" alt="">
+                </div>
+                <div class="team-content">
+                  <h5>Abhi Kulsheshtra</h5>
+                  <div class="text-sm fg-grey">Lungs Cancer </div>
+
+                  <div class="social-button">
+                    <a href="#"><span class="mai-logo-linkedin"></span></a>
+                    <a href="mailto:predcancer@mail.com"><span class="mai-mail"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-3">
+
+              <div class="team-wrap">
+                <div class="team-profile">
+                  <img src="/static/img/teams/unnamed.jpg" alt="">
+                </div>
+                <div class="team-content">
+                  <h5>Vishesh Goyal</h5>
+                  <div class="text-sm fg-grey">Brain Cancer </div>
+
+                  <div class="social-button">
+                    <a href="#"><span class="mai-logo-linkedin"></span></a>
+                    <a href="mailto:goyal.vishesh51@gmail.com"><span class="mai-mail"></span></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div> <!-- .container -->
+      </div> <!-- .page-section -->
+
+
+
+
+      <div class="page-section">
+        <div class="container">
+          <div class="text-center">
+            <h2 class="title-section mb-3">Stay in touch with us</h2>
+            <p>Just say hello or drop us a line. You can manualy send us email on <a
+                href="mailto:predcancer@mail.com">predcancer@mail.com</a></p>
+          </div>
+          <div class="row justify-content-center mt-5">
+            <div class="col-lg-8">
+              <form action="#" class="form-contact">
+                <div class="row">
+                  <div class="col-sm-6 py-2">
+                    <label for="name" class="fg-grey">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter name..">
+                  </div>
+                  <div class="col-sm-6 py-2">
+                    <label for="email" class="fg-grey">Email</label>
+                    <input type="text" class="form-control" id="email" placeholder="Email address..">
+                  </div>
+                  <div class="col-12 py-2">
+                    <label for="subject" class="fg-grey">Subject</label>
+                    <input type="text" class="form-control" id="subject" placeholder="Subject..">
+                  </div>
+                  <div class="col-12 py-2">
+                    <label for="message" class="fg-grey">Message</label>
+                    <textarea id="message" rows="8" class="form-control" placeholder="Enter message.."></textarea>
+                  </div>
+                  <div class="col-12 mt-3">
+                    <button type="submit" class="btn btn-primary px-5">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div> <!-- .container -->
+      </div> <!-- .page-section -->
+
+
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3 py-3">
+          <a href="/">
+            <h3><span class="fg-white">Pred</span>Cancer</h3>
+          </a>
+        </div>
+        <div class="col-lg-3 py-3">
+          <h5>Contact Information</h5>
+          <p>Chandigarh University,Mohali,Punjab</p>
+          <p>Email: predcancer@mail.com</p>
+          <p>Phone: +91 7017448733</p>
+        </div>
+
+        <div class="col-lg-3 py-3">
+          <h5>Newsletter</h5>
+          <form action="/">
+            <input type="text" class="form-control" placeholder="Enter your email">
+            <button type="submit" class="btn btn-primary btn-sm mt-2">Submit</button>
+          </form>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <p>Copyright 2021. </p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </footer>
+
+
+  <script src="/static/js/jquery-3.5.1.min.js"></script>
+
+  <script src="/static/js/bootstrap.bundle.min.js"></script>
+
+  <script src="/static/vendor/owl-carousel/js/owl.carousel.min.js"></script>
+
+  <script src="/static/vendor/wow/wow.min.js"></script>
+
+  <script src="/static/vendor/fancybox/js/jquery.fancybox.min.js"></script>
+
+  <script src="/static/vendor/isotope/isotope.pkgd.js"></script>
+
+  <script src="/static/js/google-maps.js"></script>
+
+  <script src="/static/js/theme.js"></script>
+
+  <script type="text/javascript">
+    function showloading() {
+      image = document.getElementById('loading_image');
+      image.style.display = 'inline'
+    }
+  </script>
+
+  <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAIA_zqjFMsJM_sxP9-6Pde5vVCTyJmUHM&callback=initMap"></script> -->
+
+</body>
+
+</html>
